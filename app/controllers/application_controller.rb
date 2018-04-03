@@ -42,6 +42,12 @@ class ApplicationController < Sinatra::Base
     erb :account
   end
 
+  post '/deposit' do
+    @user = User.find(session[:user_id])
+    @user.balance = @user.balance + params[:deposit_amount].to_f
+    erb :account
+  end
+
   get "/login" do
     erb :login
   end
