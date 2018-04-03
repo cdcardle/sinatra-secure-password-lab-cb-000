@@ -41,7 +41,7 @@ class ApplicationController < Sinatra::Base
       erb :error
     else
       @user.balance = @user.balance - params[:withdrawal_amount].to_f
-      @user.ave
+      @user.save
       erb :account
     end
   end
