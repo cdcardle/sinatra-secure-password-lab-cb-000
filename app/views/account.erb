@@ -7,14 +7,14 @@
     <h3>Withdraw Funds:</h3>
     $<input type="text" name="withdrawal_amount">
 
-    <input type="submit" id="submit" value="Submit Withdrawal">
+    <input type="submit" id="withdrawal_submit" value="Submit Withdrawal">
   </form>
 
-  <form method=post action="/account">
+  <form method=post action="/account" onsubmit=>
     <h3>Deposit Funds:</h3>
     $<input type="text" name="deposit_amount">
 
-    <input type="submit" id="submit" value="Submit Deposit">
+    <input type="submit" id="deposit_submit" value="Submit Deposit">
   </form>
 </p>
 
