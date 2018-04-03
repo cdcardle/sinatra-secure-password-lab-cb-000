@@ -35,9 +35,10 @@ class ApplicationController < Sinatra::Base
     erb :account
   end
 
-  post '/account' do
+  post '/withdrawal' do
     @user = User.find(session[:user_id])
     redirect "/error" if params[:withdrawal_amount].to_f > @user.balance
+    @user.balance = @user.balance - params[:withdrawal_amount].to_f
     erb :account
   end
 
