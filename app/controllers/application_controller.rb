@@ -44,7 +44,7 @@ class ApplicationController < Sinatra::Base
     user = User.find_by(:username => params[:username])
 
     if user
-      redirect "/account"
+      erb :account
     else
       redirect "/failure"
     end
