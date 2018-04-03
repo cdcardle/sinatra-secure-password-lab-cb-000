@@ -4,14 +4,14 @@
   Your Balance: $<%= sprintf("%.2f",@user.balance) %><br>
 
   <form method=post action="/account">
-    <h3>Withdraw Money:</h3>
+    <h3>Withdraw Funds:</h3>
     $<input type="text" name="amount">
 
     <input type="submit" id="submit" value="Submit Withdrawal">
   </form>
 
   <form method=post action="/account">
-    <h3>Deposit Money:</h3>
+    <h3>Deposit Funds:</h3>
     $<input type="text" name="amount">
 
     <input type="submit" id="submit" value="Submit Deposit">
