@@ -35,6 +35,9 @@ class ApplicationController < Sinatra::Base
     erb :account
   end
 
+  post '/account' do
+
+  end
 
   get "/login" do
     erb :login
