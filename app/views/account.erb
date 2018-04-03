@@ -3,6 +3,11 @@
 <p>
   Your Balance: $<%= sprintf("%.2f",@user.balance) %><br>
   <!-- withdraw -->
+  <form method=post action="/account">
+    <input type="text" name="amount" placeholder="$0.00"><br>
+    
+    <input type="submit" id="submit">
+  </form>
   <!-- deposit -->
 </p>
 
